@@ -3,10 +3,10 @@
 
 using namespace std;
 
-// string first = "Francisco", middle="Javier", last = "Nunez", dot = ".";
-// string first = "Francisco", middle="Javier.", last = "Nunez", dot = ".";
-// string first = "Francisco", middle="J", last = "Nunez", dot = ".";
-string first = "Francisco", middle="", last = "Nunez", dot = ".";
+// string first = "Ikki", middle="De", last = "Fenix", dot = ".";
+// string first = "Shiryu", middle="De.", last = "Dragon", dot = ".";
+string first = "Hyoga", middle="De", last = "Cisne", dot = ".";
+// string first = "Shun", middle="", last = "Andromeda", dot = ".";
 
 int main() {
 
