@@ -21,11 +21,25 @@ class DayOfYear {
         int day; // Member variable to store the day   
 };
 
-// Constructor definition
-DayOfYear::DayOfYear(int monthValue, int dayValue) {
-    month = monthValue;
-    day = dayValue;
-}
+// // Constructor definition
+// DayOfYear::DayOfYear(int monthValue, int dayValue) {
+//     month = monthValue;
+//     day = dayValue;
+// }
+
+// Constructor with initialization section
+DayOfYear::DayOfYear(int monthValue, int dayValue)
+    : month(monthValue), day(dayValue) {
+
+        if ((month < 1) || (month > 12)) {
+            cout << "Illegal month value!\n";
+            exit(1);
+        }
+        if ((day < 1) || (day > 31)) {
+            cout << "Illegal day value!\n";
+            exit(1);
+        }
+}  
 
 // Function to set month and day (The void keyword indicates that the functions do not return any value.)
 void DayOfYear::set(int newMonth, int newDay) {
