@@ -9,9 +9,8 @@ struct Point {
     double distance(const Point&) const; // Tuesday's notes 9-17
     bool IsEqual(const Point&) const; // Today's 9-19
     bool NotEqual(const Point&) const;
-    // getter, accessor int getX() const;
-    // setter, mutator void setX(value);
     
+    // getter, accessor int getX() const;
     int getX() const {
         return x;
     }
@@ -24,6 +23,7 @@ struct Point {
     //     return z;
     // }
     
+    // setter, mutator void setX(value);
     void setX(int);
     
     // void setY(int);

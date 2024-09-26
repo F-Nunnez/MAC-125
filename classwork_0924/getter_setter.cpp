@@ -9,10 +9,15 @@ struct Point {
     double distance(const Point&) const; // Tuesday's notes 9-17
     bool IsEqual(const Point&) const; // Today's 9-19
     bool NotEqual(const Point&) const;
-    // getter, accessor int getX() const;
-    // setter, mutator void setX(value);
     
+    // setter, mutator void setX(value);
     void setX(int);
+
+    // getter, accessor int getX() const;
+    int getX() {
+        return x;
+    }
+
 };
 
 void Point::setX(int val) {
@@ -45,16 +50,17 @@ int main() {
 
     Origin.show(); // Make P an alias for Origin.
     hero.show(); // Make P an alias for hero.
-    // monster.show();
+    monster.show();
     //Origin.x = -34;
     Origin.setX(-34);
     Origin.show();
-    // cout << "Hero is " << hero.distance(WishingWell) << " km from well\n";
+    cout << "Hero is " << hero.distance(WishingWell) << " km from well\n";
+    cout << "Origin.getX(): " << Origin.getX() << "\n";
 
-    // if (hero.distance(WishingWell) <2.0) 
-    //     cout << "Hero drinks water\n";
-    // else
-    //     cout << "Hero is still thirsty 🚰\n";
+    if (hero.distance(WishingWell) <2.0) 
+        cout << "Hero drinks water\n";
+    else
+        cout << "Hero is still thirsty 🚰\n";
 
     return 0;    
 }
