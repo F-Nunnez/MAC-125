@@ -1,9 +1,10 @@
 #include <iostream>
 #include <string>
 
+using std::cin;
 using std::cout;
 using std::endl;
-using std::string;
+using std::string; // or std::string
 
 struct Point {
     double x, y;
