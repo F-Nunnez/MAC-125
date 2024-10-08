@@ -1,5 +1,5 @@
-#ifndef _FUN_
-#define _FUN_
+#ifndef _FUN_H
+#define _FUN_H
 
 #include <iostream>
 using std::string;
